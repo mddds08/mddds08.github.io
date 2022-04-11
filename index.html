@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>PortofolioWeb | Ahmad</title>
+</head>
+<script>
+    // smooth scroll
+    $(document).ready(function () {
+        $("a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+</script>
+
+<body>
+    <div class="container" id="home">
+        <!-- Navbar -->
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+            <div class="logo">Portofolio</div>
+            <ul class="ul-nav">
+                <li><a href="#home"><i class="fa-solid fa-home"></i>home</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-bars-progress"></i>My projects</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+            </ul>
+        </nav>
+        <!-- End Navbar -->
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <div class="img-photo">
+                        <img src="assets/img/photo1.png" alt="myphoto">
+                        <div class="text-photo" style="text-align: center;">
+                            <h4>Ahmad Raihanul</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                    <div class="content-text">
+                        <h1>Welcome to my Portofolio</h1>
+                        <p>I am a web developer and designer based in <b> Indonesia</b>. I love to create beautiful and
+                            functional
+                            websites.</p>
+                        <br>
+                        <a href="#about" class="btn-about">Find out more</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- About -->
+        <img src="assets/wave.svg" alt="wave">
+        <section id="about">
+            <div class="section-heading" style="text-align: center;">
+                <div class="about">
+                    <h1>About Me</h1>
+                </div>
+                <p>My fullname is Ahmad Raihanul Gibran, born in Makassar 2 July 2001. I have been in the world of
+                    technology since high school, starting with using css & html markup languages</p>
+            </div>
+            <hr width="25%" size="3" color="white" style="margin: 0 auto;">
+            <div class="about-content">
+                <div class="about-content-right">
+                    <img src="assets/Setting.svg" alt="skills" class="img-content">
+                    <div class="about-content-text">
+                        <h1>My Skills</h1>
+                        <p>I have a lot of skills in web development, I can develop web application using HTML, CSS,
+                            JavaScript, JQuery & Bootstrap. I have experience in web design, graphic design, and web
+                            development.
+                    </div>
+                </div>
+                <div class="about-content-left">
+                    <div class="about-content-text">
+                        <h1>My Interest</h1>
+                        <p>I am interested in web development, graphic design, and web design. I am also interested in
+                            learning new things and learning new languages. I am also interested in learning new
+                            technologies and technologies that are related to web development.
+                    </div>
+                    <img src="assets/Vision.svg" alt="Interest" class="img-content">
+                </div>
+                <div class="exp-content">
+                    <div class="exp-content-text">
+                        <h1>Last Experience</h1>
+                        <ul>
+                            <li><b>2021</b><br>i am taking Cloud Practitioner Essentials classes held by Dicoding & AWS
+                                partners <br>
+                                <a href="https://www.dicoding.com/certificates/4EXG6OQDGZRL
+                                " class="cert-link">View Certificate</a>
+                            </li>
+                            <li>
+                                <b>2022</b><br>I attended Front End Developer training held by Digitalent Kominfo in
+                                partnership with Progate. <br>
+                                <a href="#" class="cert-link">View Certificate (Soon)</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <img src="assets/wave-vert3.svg" alt="wave" class="wave-vertical">
+        <!-- End About -->
+
+        <!-- Main Section -->
+        <main id="projects">
+            <div class="project-section">
+                <h1>My Project</h1>
+                <div class="project-list">
+                    <div class="box-model">
+                        <div class="block-img">
+                            <img src="assets/img/img-3.png" alt="calculatorapp">
+                            <div class="box-text">
+                                <h2>ResponsiveWeb</h2>
+                                <hr>
+                                <p>Create Web with collabotarion team using HTML,CSS & JavaScript</p>
+                            </div>
+                        </div>
+                        <a class="btn-project" href="https://mddds08.github.io/projectfga-a11/"> View
+                            Project</a>
+                    </div>
+                    <div class="box-model">
+                        <div class="block-img">
+                            <img src="assets/img/img-2.png" alt="calculatorapp">
+                            <div class="box-text">
+                                <h2>Web Clone</h2>
+                                <hr>
+                                <p>Clone Web using HTML,CSS & Bootstrap</p>
+                            </div>
+                        </div>
+                        <a class="btn-project" href="https://mddds08.github.io/EduworkClone"> View
+                            Project</a>
+                    </div>
+                    <div class="box-model">
+                        <div class="block-img">
+                            <img src="assets/img/img-1.png" alt="calculatorapp">
+                            <div class="box-text">
+                                <h2>CalculatorApp</h2>
+                                <hr>
+                                <p>Simple Web Calculator using HTML,CSS & JavaScript</p>
+                            </div>
+                        </div>
+                        <a class="btn-project" href="https://mddds08.github.io/WebCalculator"> View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End Main Section -->
+
+        <!-- Contact -->
+        <div class="contact-container" id="contact">
+            <div class="img-contact">
+                <img src="assets/Customer Interview.svg" alt="img-contact">
+            </div>
+            <div class="contact-section">
+                <h1>Get in Touch</h1>
+                <div class="box-contact">
+                    <form action="mailto:ahmdrhnl@gmail.com" method="post" enctype="text/plain">
+                        <a href="https://www.github.com/mddds08"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ahmdraihanul"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <hr width="30px" size="2" style="margin: 20px 0;">
+                        <p>Email</p>
+                        <input type="email" placeholder="Your Email" class="email">
+                        <p>Message</p>
+                        <textarea name=”ContactCommentt” placeholder="Your Message" cols="30" rows="10"></textarea>
+                        <button type="submit" class="btn-submit" value="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Footer -->
+        <footer>
+            <p>all right reserved &copy; 2022 Ahmad Raihanul</p>
+        </footer>
+        <!-- End Footer -->
+    </div>
+</body>
+
+</html>
