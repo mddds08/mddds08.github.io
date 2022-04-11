@@ -383,7 +383,7 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         position: fixed;
-        width: 50%;
+        width: 55%;
         height: 100%;
         background: #f9f9f9;
         top: 60px;
@@ -429,13 +429,22 @@ footer {
     }
 
     .project-list {
-        padding: 0px;
+        flex-direction: column;
+        padding: 0;
     }
-
+    .box-model {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+    .img-contact img{
+        width: 300px;
+    }
     footer {
+        top: 0;
         height: 100px;
         background-color: #003663;
-        margin: 0 auto;
+        margin: -1px auto;
         font-size: 12px;
         padding-top: 20px;
         text-align: center;
