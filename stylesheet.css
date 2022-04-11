@@ -308,6 +308,10 @@ main {
     margin: 5px 20px 5px 0;
 }
 
+.fa-phone {
+    font-size: 28px;
+}
+
 .img-contact img {
     width: 400px;
 }
