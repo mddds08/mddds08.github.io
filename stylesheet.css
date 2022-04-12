@@ -409,6 +409,9 @@ footer {
     .content-text {
         margin-left: 20px;
     }
+    .about-content-text {
+        padding: 10px 0;
+    }
 
     .img-photo img {
         margin-right: 0;
