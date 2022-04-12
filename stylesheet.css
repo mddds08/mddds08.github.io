@@ -88,6 +88,10 @@ nav li a:hover {
     display: inline-block;
 }
 
+.fa-phone {
+    font-size: 28px;
+}
+
 .content-text {
     margin-left: 60px;
 
@@ -215,7 +219,6 @@ section {
     justify-content: space-around;
     flex-direction: column;
     width: 400px;
-    height: 180px;
     background-color: #fdfdfd;
     border-radius: 10px;
     margin: 20px;
@@ -240,6 +243,7 @@ section {
 
 .block-img {
     display: flex;
+    justify-content: space-between;
 }
 
 .block-img img {
