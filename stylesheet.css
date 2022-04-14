@@ -359,6 +359,25 @@ textarea {
     transition: 0.1s ease-in-out;
 }
 
+.line {
+    position: relative;
+    animation: move 4s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 120px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
 footer {
     height: 100px;
     background-color: #003663;
@@ -409,6 +428,7 @@ footer {
     .content-text {
         margin-left: 20px;
     }
+
     .about-content-text {
         padding: 10px 0;
     }
