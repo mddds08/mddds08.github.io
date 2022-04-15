@@ -15,8 +15,8 @@
     <title>PortofolioWeb | Ahmad Raihanul</title>
 </head>
 <script>
-    // smooth scroll
     $(document).ready(function () {
+        // smooth scroll
         $("a").on('click', function (event) {
             if (this.hash !== "") {
                 event.preventDefault();
@@ -29,6 +29,32 @@
                     window.location.hash = hash;
                 });
             }
+        });
+
+
+        //on scroll
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 600) {
+                $(".about-content-right").fadeIn(1000)
+
+            } else {
+                $(".about-content-right").fadeOut(500)
+            }
+            if (scroll > 1000) {
+                $(".about-content-left").fadeIn(1000)
+
+            } else {
+                $(".about-content-left").fadeOut(500)
+            }
+            if (scroll > 1400) {
+                $(".exp-content").fadeIn(1000)
+
+            } else {
+                $(".exp-content").fadeOut(500)
+            }
+
         });
     });
 </script>
